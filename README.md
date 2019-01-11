@@ -1,4 +1,4 @@
-### Github
+##  0110 Github
 
 1. 安装 Git
 
@@ -18,11 +18,9 @@
 
 7. 更新 Ctrl + T
 
-###Day02
+##  0111 Day02
 
-1. 什么是 Java 的关键字
-
-# Java关键字
+#### 1.什么是 Java 的关键字
 
 | abstract | assert     | boolean   |  break  | case         | byte       |
 | :------: | ---------- | --------- | :-----: | ------------ | ---------- |
@@ -35,7 +33,7 @@
 |  throw   | throws     | transient |   try   | void         | volatile   |
 |  while   |            |           |         |              |            |
 
-2. Java SE 的所有数据类型
+####  2.Java SE 的所有数据类型
 
 **byte**：Java中最小的数据类型，在内存中占8位(bit)，即1个字节，取值范围-128~127，默认值0
 
@@ -53,3 +51,9 @@
 
 **boolean**：布尔类型，占1个字节，用于判断真或假（仅有两个值，即true、false），默认值false
 
+#### 3.用条件运算符实现：
+- 接收用户输入的成绩 int score
+- 大于等于 85，输出 A
+- 大于等于60， 输出 B
+小于 60，输出 C
+    -   答案参见_6_test
