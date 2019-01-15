@@ -90,3 +90,57 @@ class Rectangle extends Shape {
         return (width + height) * 2;
     }
 }
+
+
+// 圆形 Circle
+class Circle extends Shape {
+
+    double pi = 3.14;
+    double radius;
+
+    public Circle(String color, double radius) {
+        super(color);
+        this.radius = radius;
+    }
+
+    @Override
+    double getArea() {
+        return pi * radius * radius;
+    }
+
+    @Override
+    double getPerimeter() {
+        return 2 * pi * radius;
+    }
+}
+
+//  三角形 Triangle
+
+class Triangle extends Shape {
+
+    double a;
+    double b;
+    double c;
+
+    public Triangle(String color, double a, double b, double c) {
+        super(color);
+        if (!((a + b > c) && (b + c > a) && (c + a > b))) {
+            System.out.println("Error.");
+            System.exit(1);
+        }
+        this.a = a;
+        this.b = b;
+        this.c = c;
+    }
+
+    @Override
+    double getArea() {
+        double s = getPerimeter() / 2;
+        return Math.sqrt(s * (s - a) * (s - b) * (s - c));
+    }
+
+    @Override
+    double getPerimeter() {
+        return a + b + c;
+    }
+}
